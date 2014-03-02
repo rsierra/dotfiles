@@ -2,10 +2,10 @@ require 'rake'
 require 'erb'
 
 desc "install the dot files into user's home directory"
-task :install do
-  install_oh_my_zsh
+task :install, :replace_all do |t, args|
+  replace_all = args[:replace_all] ? true : false
+  install_oh_my_zsh replace_all
   switch_to_zsh
-  replace_all = true
   files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
   files << "oh-my-zsh/custom/plugins/rbates"
   files << "oh-my-zsh/custom/rbates.zsh-theme"
@@ -73,8 +73,11 @@ def switch_to_zsh
   end
 end
 
-def install_oh_my_zsh
-  if File.exist?(File.join(ENV['HOME'], ".oh-my-zsh"))
+def install_oh_my_zsh replace_all = false
+  if replace_all
+    puts "installing oh-my-zsh"
+    system %Q{git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
+  elsif File.exist?(File.join(ENV['HOME'], ".oh-my-zsh"))
     puts "found ~/.oh-my-zsh"
   else
     print "install oh-my-zsh? [ynq] "
