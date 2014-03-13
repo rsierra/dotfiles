@@ -6,3 +6,6 @@
 # Bundle
 .bundle
 vendor/cache
+
+# Foreman local
+Procfile.local
