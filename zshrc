@@ -34,9 +34,5 @@ alias showhidden="defaults write com.apple.finder AppleShowAllFiles -boolean tru
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -boolean false && killall Finder"
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 
-#Bundler
-alias be="bundle exec "
-alias bes="bundle exec spring "
-
 # Boxen environment
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
