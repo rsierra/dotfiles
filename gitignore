@@ -9,3 +9,6 @@ vendor/cache
 
 # Foreman local
 Procfile.local
+
+# Spring Bin
+bin
