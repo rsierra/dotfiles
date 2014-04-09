@@ -21,6 +21,8 @@ alias gm='git merge --no-ff'
 
 # rails
 alias rst='touch tmp/restart.txt'
+alias fs='foreman start'
+alias fsl='foreman start -f Procfile.local'
 
 # commands starting with % for pasting from web
 alias %=' '
