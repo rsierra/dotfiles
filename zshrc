@@ -23,6 +23,10 @@ alias gm='git merge --no-ff'
 alias rst='touch tmp/restart.txt'
 alias fs='foreman start'
 alias fsl='foreman start -f Procfile.local'
+# Command jump the alias and uses de global rails foreman, not the bundled
+alias gfs='command foreman start'
+alias gfsl='command foreman start -f Procfile.local'
+
 
 # commands starting with % for pasting from web
 alias %=' '
@@ -38,3 +42,7 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 
 # Boxen environment
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+# Codification Fix for some some ssh sessions (Lavinia servers)
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
