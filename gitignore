@@ -7,6 +7,9 @@
 .bundle
 vendor/cache
 
+#Ruby
+.ruby-version
+
 # Foreman local
 Procfile.local
 
