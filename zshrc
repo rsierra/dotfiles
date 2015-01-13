@@ -3,7 +3,7 @@ ZSH_THEME="vortizhe"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git rails brew gem osx ruby rbenv bundler cap rake sublime heroku mac rbates)
+plugins=(git rails brew gem osx ruby rbenv bundler cap rake sublime heroku mac rbates node)
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='subl -w'
