@@ -46,3 +46,7 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 # Codification Fix for some some ssh sessions (Lavinia servers)
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# GO paths
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
