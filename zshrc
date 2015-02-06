@@ -5,7 +5,7 @@ ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git rails brew gem osx rvm bundler cap powder rake rake-fast sublime heroku capistrano common-aliases zsh_reload)
+plugins=(git rails brew gem osx rbenv bundler cap powder rake rake-fast atom sublime heroku capistrano common-aliases zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
