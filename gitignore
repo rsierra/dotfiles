@@ -9,3 +9,16 @@
 *.sublime*
 restart.txt
 .rake_tasks
+
+# Bundle
+.bundle
+vendor/cache
+
+#Ruby
+.ruby-version
+
+# Foreman local
+Procfile.local
+
+# Spring Bin
+bin
