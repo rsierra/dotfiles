@@ -23,6 +23,13 @@ alias gm='git merge --no-ff'
 # rails
 alias rst='touch tmp/restart.txt'
 
+# Foreman
+alias fs='foreman start'
+alias fsl='foreman start -f Procfile.local'
+# Command jump the alias and uses de global rails foreman, not the bundled
+alias gfs='command foreman start'
+alias gfsl='command foreman start -f Procfile.local'
+
 # commands starting with % for pasting from web
 alias %=' '
 
